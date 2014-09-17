@@ -2,7 +2,7 @@
 /*
 * Clase Cache
 * carlos de oliveira
-* cardoel@gmail.com
+* cardeol@gmail.com
 */
 
 // cache dir requires read/write permissions 
