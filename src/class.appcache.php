@@ -1,6 +1,6 @@
 <?php
 /*
-* Clase Cache
+* APP Cache
 * carlos de oliveira
 * cardoel@gmail.com
 */
@@ -8,7 +8,7 @@
 define("APPCAHE_DEFAULT_DIR",dirname(dirname(__FILE__))."/cache/");
 
 
-class Cache
+class AppCache
 {
 	var $cache_dir; 
 	var $cache_time;
@@ -28,12 +28,6 @@ class Cache
 		$this->keylink = urlencode($_SERVER['REQUEST_URI']);
 	}
 	
-	function cache() {
-		$this->cache_time = SELF::CACHE_TIME;
-		$this->cache_dir = APPCAHE_DEFAULT_DIR;	
-		$this->cleaning = NULL;
-	}
-
 	public function compressData($needcompression) {
 		$this->compression = $needcompression;
 	}
